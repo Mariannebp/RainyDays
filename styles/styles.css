@@ -15,6 +15,7 @@ h3 {
 header {
   max-width: 2000px;
   text-align: center;
+  margin: 0 0 40px 0;
 }
 
 header img {
@@ -70,21 +71,23 @@ a {
 /* Home Page */
 main {
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-gap: 40px;
-  margin: 100px 200px;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+  margin: auto 200px;
 }
 
 .products {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  grid-gap: 40x;
-  grid-row-gap: 40px;
+  grid-gap: 40px;
+  max-width: 80%;
+  justify-self: center;
+  margin: ;
 }
 
 .products img {
-  width: 80%;
+  display: grid;
+  max-width: 100%;
 }
 
 .inspiration__featured {
