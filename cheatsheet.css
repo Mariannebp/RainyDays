@@ -1,0 +1,96 @@
+/* Media Queries */
+@media only screen and (min-width: 1025px) {
+  main {
+    max-width: 2000px;
+    display: grid;
+    grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+    margin: auto 200px;
+  }
+
+  .products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 40px;
+    max-width: 80%;
+    justify-self: center;
+  }
+
+  .products img {
+    display: grid;
+    width: 200px;
+    max-width: 100%;
+  }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 1024px) {
+  main {
+    max-width: 1024px;
+    display: grid;
+    grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+    margin: auto 100px;
+  }
+
+  .products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 20px;
+    max-width: 80%;
+    justify-self: center;
+  }
+
+  .products img {
+    display: grid;
+    width: 150px;
+    max-width: 100%;
+  }
+
+  .inspiration__featured img {
+    width: 150px;
+    max-width: 80%;
+  }
+}
+
+@media only screen and (max-width: 399px) {
+  main {
+    max-width: 399px;
+    margin: auto 20px;
+  }
+
+  pre {
+    font-size: 0.8em;
+  }
+
+  .products img {
+    display: block;
+    width: 100px;
+    max-width: 80%;
+  }
+
+  .inspiration__featured img {
+    width: 100px;
+    max-width: 80%;
+  }
+}
+
+<label
+  for="hamburger-menu"
+  > <i
+  class="fas fa-bars"
+  > </i
+  > </label
+  > <input
+  type="checkbox"
+  id="hamburger-menu"
+  > nav {
+  display: none;
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+#hamburger-menu:checked ~ nav {
+  display: block;
+}

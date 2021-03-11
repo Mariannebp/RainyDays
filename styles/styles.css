@@ -3,6 +3,8 @@ body {
   background-color: #f5f5f0;
   display: grid;
   grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  margin: 0;
 }
 
 h1,
@@ -13,9 +15,9 @@ h3 {
 }
 
 header {
-  max-width: 2000px;
+  width: 100%;
   text-align: center;
-  margin: 0 0 40px 0;
+  margin: 10px 0 40px 0;
 }
 
 header img {
@@ -70,6 +72,7 @@ a {
 
 /* Home Page */
 main {
+  max-width: 2000px;
   display: grid;
   grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
   margin: auto 200px;
@@ -80,14 +83,15 @@ main {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-gap: 40px;
-  max-width: 80%;
+  max-width: 100%;
   justify-self: center;
-  margin: ;
+  margin-right: 40px;
 }
 
 .products img {
   display: grid;
-  max-width: 100%;
+  width: 100%;
+  max-width: 200px;
 }
 
 .inspiration__featured {
@@ -95,7 +99,7 @@ main {
   padding: 0 30px;
 }
 
-.inspiration__featured-posts {
+.inspiration__featured div {
   margin: auto auto 40px auto;
 }
 
@@ -105,4 +109,75 @@ main {
 
 .inspiration__featured img {
   width: 100%;
+  max-width: 200px;
+}
+
+/* Media Queries */
+@media only screen and (min-width: 400px) and (max-width: 1024px) {
+  header nav li {
+    max-width: 1024px;
+    display: inline-flex;
+    justify-content: space-between;
+    color: #115c66;
+    padding: 10px;
+    margin: auto 10px;
+  }
+
+  main {
+    max-width: 1024px;
+    margin: auto 100px;
+  }
+
+  footer {
+    max-width: 1024px;
+    grid-gap: 100px;
+  }
+}
+
+@media only screen and (max-width: 399px) {
+  header {
+    margin: 10px auto;
+  }
+
+  header img {
+    max-width: 150px;
+    margin-bottom: 10px;
+  }
+
+  main {
+    display: block;
+    max-width: 399px;
+    text-align: center;
+    margin: 0 90px;
+  }
+
+  .products {
+    display: block;
+    margin: auto;
+    border-bottom: 1px solid grey;
+  }
+
+  .products div {
+    margin: 20px auto;
+  }
+
+  .products img {
+    max-width: 100%;
+  }
+
+  .inspiration__featured {
+    border-left: none;
+  }
+
+  .inspiration__featured-posts {
+    margin: auto auto 20px auto;
+  }
+
+  footer {
+    display: block;
+  }
+
+  footer p {
+    margin-top: 20px;
+  }
 }
