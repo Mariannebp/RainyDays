@@ -74,7 +74,7 @@ a {
 main {
   max-width: 2000px;
   display: grid;
-  grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+  grid-template-columns: 2fr 1fr;
   margin: auto 200px;
 }
 
@@ -113,6 +113,16 @@ main {
 }
 
 /* Media Queries */
+@media only screen and (min-width: 1025px) {
+  .products img {
+    width: 200px;
+  }
+
+  .inspiration__featured img {
+    width: 200px;
+  }
+}
+
 @media only screen and (min-width: 400px) and (max-width: 1024px) {
   header nav li {
     max-width: 1024px;
@@ -121,11 +131,18 @@ main {
     color: #115c66;
     padding: 10px;
     margin: auto 10px;
+    font-size: 0.8em;
   }
 
   main {
     max-width: 1024px;
     margin: auto 100px;
+  }
+
+  .products img,
+  .inspiration__featured img {
+    min-width: 130px;
+    max-width: 200px;
   }
 
   footer {
