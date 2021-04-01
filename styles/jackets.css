@@ -13,6 +13,11 @@ main {
   font-size: 1.3em;
 }
 
+.jackets h2,
+p {
+  text-align: right;
+}
+
 .jackets img {
   max-width: 200px;
 }
