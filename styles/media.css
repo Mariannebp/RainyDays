@@ -1,0 +1,138 @@
+@media only screen and (min-width: 1025px) {
+  .products img {
+    width: 200px;
+  }
+
+  .inspiration__featured img {
+    width: 200px;
+  }
+}
+
+@media only screen and (min-width: 821px) and (max-width: 1024px) {
+  body {
+    font-size: 0.8em;
+    max-width: 1024px;
+  }
+
+  header nav li {
+    display: inline-flex;
+    justify-content: space-between;
+    color: #115c66;
+    padding: 10px;
+    margin: auto 10px;
+  }
+
+  main {
+    margin: auto 100px;
+  }
+
+  .products img,
+  .inspiration__featured img {
+    min-width: 160px;
+    max-width: 200px;
+  }
+
+  footer {
+    grid-gap: 100px;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 820px) {
+  body {
+    font-size: 0.8em;
+    max-width: 820px;
+  }
+
+  header nav li {
+    display: inline-flex;
+    justify-content: space-between;
+    color: #115c66;
+    padding: 10px;
+    margin: auto 10px;
+  }
+
+  main {
+    margin: auto 100px;
+  }
+
+  .products img,
+  .inspiration__featured img {
+    min-width: 150px;
+    max-width: 200px;
+  }
+
+  .products {
+    display: block;
+    margin: auto;
+  }
+
+  .products div {
+    margin: 20px;
+  }
+
+  footer {
+    grid-gap: 50px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 0.8em;
+    max-width: 600px;
+  }
+
+  header {
+    max-width: 600px;
+    margin: 10px auto;
+  }
+
+  header img {
+    max-width: 150px;
+    margin-bottom: 10px;
+  }
+
+  header nav li {
+    display: inline-flex;
+    justify-content: space-between;
+    color: #115c66;
+    padding: 10px;
+    margin: auto;
+  }
+
+  main {
+    display: block;
+    text-align: center;
+    margin: 0 90px;
+  }
+
+  .products {
+    display: block;
+    margin: auto;
+    border-bottom: 1px solid grey;
+  }
+
+  .products div {
+    margin: 20px auto;
+  }
+
+  .products img {
+    max-width: 200px;
+    margin: auto;
+  }
+
+  .inspiration__featured {
+    border-left: none;
+  }
+
+  .inspiration__featured-posts {
+    margin: auto auto 20px auto;
+  }
+
+  footer {
+    display: block;
+  }
+
+  footer p {
+    margin-top: 20px;
+  }
+}

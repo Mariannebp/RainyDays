@@ -1,0 +1,18 @@
+main {
+  margin: auto;
+}
+
+.jackets-list {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-gap: 20px;
+}
+
+.jackets h2 {
+  max-width: 200px;
+  font-size: 1.3em;
+}
+
+.jackets img {
+  max-width: 200px;
+}
