@@ -1,0 +1,40 @@
+main {
+  margin: 30px auto;
+}
+
+.jackets-list {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-gap: 20px;
+}
+
+.jackets div {
+  position: relative;
+  overflow: hidden;
+}
+.jackets h2 {
+  max-width: 200px;
+  font-size: 1.3em;
+}
+
+.jackets h2,
+p {
+  text-align: right;
+  color: #0b3a40;
+}
+
+.jackets img {
+  max-width: 200px;
+}
+
+.jackets__sale {
+  position: absolute;
+  padding: 5px;
+  width: 180px;
+  text-align: center;
+  background: #fff;
+  color: #115c66;
+  transform: rotate(40deg);
+  top: 200px;
+  left: -50px;
+}

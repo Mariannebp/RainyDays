@@ -1,19 +1,25 @@
-.about-content {
+main {
+  margin: auto;
+}
+
+.inspiration__page {
   max-width: 855px;
   margin: 50px auto;
   display: inline-flex;
   flex-direction: column;
 }
 
-.about-content div {
+.inspiration__page div {
   display: inline-flex;
   align-items: center;
+  flex-direction: column;
 }
 
-.about-content img {
+.inspiration__page img {
   max-width: 300px;
   margin: 20px;
 }
 
 .float {
+  float: left;
 }

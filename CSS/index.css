@@ -5,6 +5,11 @@ main {
   margin: auto;
 }
 
+header img {
+  max-width: 300px;
+  padding: 10px auto;
+}
+
 .products {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -31,7 +36,7 @@ main {
 .products p {
   position: absolute;
   padding: 10px;
-  background: #0b3a40;
+  background-color: #0b3a40;
   opacity: 0.4;
   width: 100%;
   top: 170px;

@@ -1,0 +1,16 @@
+.about-content {
+  max-width: 855px;
+  margin: 50px auto;
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.about-content div {
+  display: inline-flex;
+  align-items: center;
+}
+
+.about-content img {
+  max-width: 300px;
+  margin: 20px;
+}
