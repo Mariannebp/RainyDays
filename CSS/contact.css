@@ -1,0 +1,21 @@
+main {
+  margin: 30px auto;
+}
+
+input,
+textarea {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 12px;
+  border: 1px solid#707070;
+  display: block;
+}
+
+.contact__form {
+  width: 300px;
+}
+
+textarea {
+  height: 100px;
+  width: 400px;
+}

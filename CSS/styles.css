@@ -42,6 +42,17 @@ header nav li {
   margin: auto 40px;
 }
 
+.cta {
+  width: 100px;
+  text-align: center;
+  background: #4a93a3;
+  color: #f5f5f0;
+  font-size: 1em;
+  padding: 5px 30px;
+  border: 2px solid#115C66;
+  border-radius: 20px;
+}
+
 footer {
   max-width: 2000px;
   margin: 50px auto;

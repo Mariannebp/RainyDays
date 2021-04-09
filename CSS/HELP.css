@@ -1,25 +1,31 @@
-main {
-  margin: auto;
+input,
+select,
+textarea {
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  margin: 10px 10px 10px 0px;
+  padding: 10px;
 }
 
-.inspiration__page {
-  max-width: 855px;
+textarea {
+  height: 65%;
+  min-height: 100px;
+}
+
+.contact {
+  max-width: 1000px;
   margin: 50px auto;
-  display: inline-flex;
+  text-align: center;
+}
+
+.form-wrapper {
+  display: flex;
+  text-align: left;
   flex-direction: column;
 }
 
-.inspiration__page div {
-  display: inline-flex;
-  align-items: center;
+.form-wrapper > * {
+  flex: 1;
+  display: flex;
   flex-direction: column;
-}
-
-.inspiration__page img {
-  max-width: 300px;
-  margin: 20px;
-}
-
-.float {
-  float: left;
 }
