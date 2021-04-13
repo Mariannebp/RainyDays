@@ -3,38 +3,46 @@ main {
   margin: 30px auto;
 }
 
-.product {
+.product-page {
   margin: auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 40px;
   max-width: 100%;
-  justify-self: center;
+  justify-self: ceter;
   margin-right: 40px;
 }
 
-.product img {
+.product-page img {
   width: 300px;
 }
 
-.product__presentation {
+.product-page__info div {
+  margin-bottom: 40px;
+}
+
+.product-page__presentation {
   display: inline-block;
 }
 
-.product__presentation img {
+.product-page__presentation img {
   width: 100px;
 }
 
+.product-page__price-tag {
+  text-align: right;
+}
 select {
   padding: 5px;
-  width: 150px;
+  width: 200px;
+  margin-bottom: 25px;
 }
 
-.product ul {
-  list-style: none;
+.product-page ul {
+  list-style: circle;
 }
 
-.product__promotions {
+.product-page__promotions {
   border-top: 1px solid#707070;
   border-bottom: 1px solid#707070;
 }
@@ -43,9 +51,6 @@ select {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   grid-gap: 20px;
-}
-
-.jackets h3 {
 }
 
 .jackets h3,
@@ -57,7 +62,4 @@ select {
 
 .jackets img {
   max-width: 200px;
-}
-
-.product__reviews {
 }

@@ -23,41 +23,49 @@
       </nav>
     </header>
     <main>
-      <section class="product">
+      <section class="product-page">
         <div>
-          <img src="/images/HH_pose_resized.jpg" alt="The Rain Jacket">
-          <div class="product__presentation" >
+          <div>
+            <img src="/images/HH_pose_resized.jpg" alt="The Rain Jacket">
+          </div>
+          <div class="product-page__presentation" >
             <img src="/images/jacketpresentation_front_resized_bg.jpg" alt="The Rain Jacket from the front">
             <img src="/images/jacketpresentation_back_resized_bg.jpg" alt="The Rain Jacket from the back">
             <img src="/images/jacketpresentation_side_resized_bg.jpg" alt="The Rain Jacket from the side">
           </div>
         </div>
-        <div>
-          <h1>The Rain Jacket</h1>
-          <p>Dark Blue</p>
-          <p>1599,-</p>
-          <select name="size" id="size">
-            <option value="choose-size">Choose Size</option>
-            <option value="x-small">X-Small</option>
-            <option value="small">Small</option>
-            <option value="medium">Medium</option>
-            <option value="large">Large</option>
-            <option value="x-large">x-large</option>
-          </select>
-          <a href="/checkout.html" class="cta">Add to Cart</a>
-          <p>DESCRIPTION</p>
-          <p>This jacket is our No. 1 bestselling jacket! With our breakthrough technology this jacket will keep you dry, while it still breaths, making it feeling comfortable to wear. The 4-way stretch ensures the jacket follows your every move så that you can focus in your adventure ahead.</p>
-          <p>Spesifications</p>
-          <ul>
-            <li>Water proff 20 000</li>
-            <li>4-way stretch</li>
-            <li>Comfortable</li>
-            <li>Duarble</li>
-            <li>Breathable</li> 
-          </ul>       
+        <div class="product-page__info">
+          <div>
+            <h1>The Rain Jacket</h1>
+            <h2 class="product-page__price-tag">1599,-</h2>
+            <form action="submit.php" method="POST">
+              <select name="size" id="size">
+                <option value="choose-size">Choose Size</option>
+                <option value="x-small">X-Small</option>
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+                <option value="x-large">x-large</option>
+              </select>
+            </form>
+            <a href="/checkout.html" class="cta" >Add to Cart</a>
+          </div>
+          <div>
+            <p>DESCRIPTION</p>
+            <p>This jacket is our No. 1 bestselling jacket! With our breakthrough technology this jacket will keep you dry, while it still breaths, making it feeling comfortable to wear. The 4-way stretch ensures the jacket follows your every move så that you can focus in your adventure ahead.</p>
+            <p>Spesifications</p>
+            <ul>
+              <li>Water proff 20 000</li>
+              <li>4-way stretch</li>
+              <li>Comfortable</li>
+              <li>Duarble</li>
+              <li>Breathable</li>
+            </ul>  
+          </div>
+               
         </div>
       </section>
-      <section class="product__promotions">
+      <section class="product-page__promotions">
         <h2>You might also like</h2>
         <div class="jackets-list">
             <a href="therainjacket.html" ><div class="jackets">
@@ -82,7 +90,7 @@
           </div></a>
         </div>
       </section>
-      <section class="product__reviews">
+      <section class="product-page__reviews">
         <h2>Reviews</h2>
         <div>
           <h3>Anna</h3>

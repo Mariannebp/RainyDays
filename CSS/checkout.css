@@ -1,8 +1,6 @@
 main {
   max-width: 855px;
   margin: 30px auto;
-  display: fex;
-  flex-direction: colun;
 }
 
 .checkout__summary {
@@ -34,6 +32,7 @@ main {
 }
 
 .checkout__information {
+  text-align: center;
 }
 
 .contact__form {

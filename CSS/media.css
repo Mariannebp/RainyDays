@@ -1,16 +1,8 @@
 @media only screen and (min-width: 1025px) {
-  .products img {
-    width: 200px;
-  }
-
-  .inspiration__featured img {
-    width: 200px;
-  }
 }
 
 @media only screen and (min-width: 821px) and (max-width: 1024px) {
   body {
-    font-size: 0.8em;
     max-width: 1024px;
   }
 
@@ -23,17 +15,29 @@
   }
 
   main {
-    margin: auto 100px;
+    margin: auto 40px;
   }
 
-  .products img,
-  .inspiration__featured img {
-    min-width: 160px;
-    max-width: 200px;
+  .jackets-list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-gap: 20px;
+  }
+
+  .jackets-list div {
+    width: 200px;
+    margin: auto;
+  }
+
+  .checkout {
+    margin: 30px 100px;
+  }
+
+  .about-content div {
+    margin: auto 50px;
   }
 
   footer {
-    grid-gap: 100px;
+    gap: 100px;
   }
 }
 
@@ -52,15 +56,10 @@
   }
 
   main {
-    margin: auto 100px;
+    margin: auto 50px;
   }
 
-  .products img,
-  .inspiration__featured img {
-    min-width: 150px;
-    max-width: 200px;
-  }
-
+  /* Home Page */
   .products {
     display: block;
     margin: auto;
@@ -70,8 +69,43 @@
     margin: 20px;
   }
 
+  .inspiration__featured img {
+    width: 180px;
+  }
+
+  /* Jackets */
+  .jackets-list div {
+    max-width: 200px;
+  }
+
+  .jackets-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-gap: 20px;
+  }
+
+  /* The Rain Jacket */
+  .product-page img {
+    width: 200px;
+  }
+
+  .product-page__presentation img {
+    width: 70px;
+  }
+
+  /* About */
+
+  .about-content div {
+    margin: auto 50px;
+  }
+
+  .inspiration__page img,
+  .about-content img {
+    width: 200px;
+  }
+
+  /* Footer */
   footer {
-    grid-gap: 50px;
+    gap: 50px;
   }
 }
 
@@ -82,7 +116,6 @@
   }
 
   header {
-    max-width: 600px;
     margin: 10px auto;
   }
 
@@ -102,9 +135,10 @@
   main {
     display: block;
     text-align: center;
-    margin: 0 90px;
+    margin: auto 10px;
   }
 
+  /* Home Page */
   .products {
     display: block;
     margin: auto;
@@ -113,11 +147,12 @@
 
   .products div {
     margin: 20px auto;
+    width: 200px;
   }
 
-  .products img {
-    max-width: 200px;
-    margin: auto;
+  .product-page p,
+  .product-page ul {
+    text-align: left;
   }
 
   .inspiration__featured {
@@ -128,8 +163,85 @@
     margin: auto auto 20px auto;
   }
 
+  /* Jackets */
+  .jackets-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-gap: 20px;
+    overflow: hidden;
+  }
+
+  .jackets-list div {
+    width: 170px;
+    margin: auto;
+  }
+
+  .jackets-list img {
+    width: 170px;
+  }
+
+  .jackets__sale {
+    top: 170px;
+  }
+
+  /* The Rain Jacket */
+  .product-page {
+    display: block;
+  }
+
+  .product-page img {
+    width: 200px;
+  }
+
+  .product-page__presentation img {
+    width: 70px;
+  }
+
+  .product-page__reviews {
+    text-align: left;
+  }
+
+  /* Checkout Pages */
+  .checkout__summary-product {
+    display: block;
+  }
+
+  .checkout__summary-product p {
+    margin: 10px;
+  }
+
+  .contact__form {
+    width: 200px;
+  }
+
+  /* Inspiration */
+  .inspiration__page {
+    display: block;
+  }
+
+  .inspiration__page img,
+  .about-content img {
+    width: 200px;
+  }
+
+  /* About */
+  .about-content div {
+    display: block;
+    margin: auto 20px;
+  }
+
+  .float {
+    float: none;
+  }
+
+  /* Contact */
+  .contact__form {
+    text-align: center;
+  }
+
+  /* Footer */
   footer {
     display: block;
+    text-align: center;
   }
 
   footer p {

@@ -28,8 +28,7 @@ header img {
 
 .products img {
   display: grid;
-  width: 100%;
-  max-width: 200px;
+  width: 200px;
   display: inline-block;
 }
 
@@ -37,11 +36,11 @@ header img {
   position: absolute;
   padding: 10px;
   background-color: #0b3a40;
-  opacity: 0.4;
+  opacity: 0.6;
   width: 100%;
   top: 170px;
   font-size: 1.5em;
-  font-weight: 500;
+  font-weght: 500;
   color: #fff;
 }
 
@@ -59,6 +58,5 @@ header img {
 }
 
 .inspiration__featured img {
-  width: 100%;
   max-width: 200px;
 }

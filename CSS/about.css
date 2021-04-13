@@ -1,8 +1,6 @@
 .about-content {
   max-width: 855px;
   margin: 50px auto;
-  display: inline-flex;
-  flex-direction: column;
 }
 
 .about-content div {
