@@ -36,6 +36,9 @@
     margin: auto 50px;
   }
 
+  .contact-page {
+    margin: 40px auto;
+  }
   footer {
     gap: 100px;
   }
@@ -103,6 +106,9 @@
     width: 200px;
   }
 
+  .contact-page {
+    margin: 40px auto;
+  }
   /* Footer */
   footer {
     gap: 50px;
@@ -209,10 +215,6 @@
     margin: 10px;
   }
 
-  .contact__form {
-    width: 200px;
-  }
-
   /* Inspiration */
   .inspiration__page {
     display: block;
@@ -234,10 +236,22 @@
   }
 
   /* Contact */
-  .contact__form {
-    text-align: center;
+  .contact-page {
+    margin: auto;
+    text-align: left;
   }
 
+  .contact__form {
+    width: 200px;
+  }
+
+  textarea {
+    width: 200px;
+  }
+
+  .contact-page .cta {
+    justify-self: right;
+  }
   /* Footer */
   footer {
     display: block;
