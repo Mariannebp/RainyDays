@@ -17,6 +17,7 @@ main {
 .jackets h2,
 p {
   text-align: right;
+  color: var(--medium-green);
 }
 
 .jackets img {

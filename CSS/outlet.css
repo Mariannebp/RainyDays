@@ -12,6 +12,7 @@ main {
   position: relative;
   overflow: hidden;
 }
+
 .jackets h2 {
   max-width: 200px;
   font-size: 1.3em;
@@ -20,7 +21,7 @@ main {
 .jackets h2,
 p {
   text-align: right;
-  color: #0b3a40;
+  color: var(--medium-green);
 }
 
 .jackets img {
@@ -32,8 +33,8 @@ p {
   padding: 5px;
   width: 180px;
   text-align: center;
-  background: #fff;
-  color: #115c66;
+  background: var(--white);
+  color: var(--aqua);
   transform: rotate(40deg);
   top: 200px;
   left: -50px;

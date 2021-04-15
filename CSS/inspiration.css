@@ -15,7 +15,7 @@ main {
 }
 
 .inspiration__page div {
-  border-bottom: 1px solid#0B3A40;
+  border-bottom: 1px solid var(--medium-green);
   margin: 20px auto;
 }
 

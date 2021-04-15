@@ -1,4 +1,35 @@
 a {
   text-decoration: none;
-  color: #4a93a3;
+  color: var(--aqua);
+}
+
+header nav ul {
+  border-top: 1px solid var(--grey);
+  border-bottom: 1px solid var(--grey);
+  padding: 0;
+}
+
+header nav li {
+  max-width: 2000px;
+  display: inline-flex;
+  justify-content: space-between;
+  color: var(--light-green);
+  padding: 10px;
+  margin: auto 40px;
+}
+
+.cta {
+  width: 100px;
+  text-align: center;
+  background: var(--aqua);
+  color: var(--light-grey);
+  font-size: 1em;
+  padding: 5px 30px;
+  border: 2px solid var(--light-green);
+  border-radius: 20px;
+}
+
+.facebook-logo {
+  width: 50px;
+  margin: 15px 32px;
 }

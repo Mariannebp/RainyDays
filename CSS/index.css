@@ -35,17 +35,16 @@ header img {
 .products p {
   position: absolute;
   padding: 10px;
-  background-color: #0b3a40;
+  background-color: var(--medium-green);
   opacity: 0.6;
   width: 100%;
   top: 170px;
   font-size: 1.5em;
-  font-weght: 500;
-  color: #fff;
+  color: var(--white);
 }
 
 .inspiration__featured {
-  border-left: 1px solid#0B3A40;
+  border-left: 1px solid var(--medium-green);
   padding: 0 30px;
 }
 
