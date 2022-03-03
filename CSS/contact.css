@@ -2,6 +2,15 @@ main {
   margin: 30px auto;
 }
 
+.message {
+  font-style: italic;
+  margin: 10px 0px;
+  padding: 0 10px 0 20px;
+  background-color: var(--medium-aqua);
+  color: var(--white);
+  width: 180px;
+}
+
 input,
 textarea {
   margin: 10px 0;
@@ -11,11 +20,29 @@ textarea {
   display: block;
 }
 
-.contact__form {
-  width: 300px;
+.contact_form {
+  width: 350px;
 }
 
 textarea {
   height: 100px;
-  width: 400px;
+}
+
+button {
+  width: 100px;
+  height: 40px;
+  margin: 10px 0;
+  border-radius: 8px;
+  background-color: var(--blue);
+  color: var(--white);
+  font-size: 1em;
+}
+
+.errorMessage {
+  margin-top: -10px;
+  margin-right: 5px;
+  font-size: small;
+  text-align: right;
+  color: var(--medium-aqua);
+  display: none;
 }

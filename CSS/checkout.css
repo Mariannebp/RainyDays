@@ -35,8 +35,8 @@ main {
   text-align: center;
 }
 
-.contact__form {
-  width: 300px;
+.contact_form {
+  width: 350px;
 }
 
 input {
@@ -45,6 +45,25 @@ input {
   border-radius: 12px;
   border: 1px solid var(--grey);
   display: block;
+}
+
+button {
+  width: 100px;
+  height: 40px;
+  margin: 10px 0;
+  border-radius: 8px;
+  background-color: var(--blue);
+  color: var(--white);
+  font-size: 1em;
+}
+
+.errorMessage {
+  margin: -10px auto 10px auto;
+  margin-right: 120px;
+  font-size: small;
+  text-align: right;
+  color: var(--medium-aqua);
+  display: none;
 }
 
 .cta {

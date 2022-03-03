@@ -90,9 +90,15 @@
     margin: auto 50px;
   }
 
+  /* Contact */
   .contact-page {
     margin: 40px auto;
   }
+
+  .message {
+    width: 150px;
+  }
+
   /* Footer */
   footer {
     gap: 50px;
@@ -216,6 +222,10 @@
   .contact-page {
     margin: auto;
     text-align: left;
+  }
+
+  .message {
+    width: 150px;
   }
 
   .contact__form {

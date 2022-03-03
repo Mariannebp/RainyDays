@@ -3,16 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Contact us with your questions pr feedback" />
+    <meta
+      name="description"
+      content="Contact us with your questions pr feedback"
+    />
     <title>Rainy Days | Contact</title>
     <link href="CSS/styles.css" rel="stylesheet" />
     <link href="CSS/contact.css" rel="stylesheet" />
     <link href="CSS/media.css" rel="stylesheet" />
-    
   </head>
   <body>
     <header>
-      <a href="index.html" ><img src="images/RainyDays_Logo.png" alt="Rainy Days Logo"></a>
+      <a href="index.html"
+        ><img src="images/RainyDays_Logo.png" alt="Rainy Days Logo"
+      /></a>
       <nav>
         <ul>
           <li><a href="products/jackets.html">News</a></li>
@@ -25,16 +29,59 @@
     </header>
     <main class="contact-page">
       <h1>Contact Us</h1>
-      <form method="POST" class="form">
-        <label for="name">Name</label>
-        <input type="text" name="name" id="name" class="contact__form">
-        <label for="emailadress">Email adress</label>
-        <input type="text" name="emailadress" id="emailadress" class="contact__form">
-        <label for="subject">Subject</label>
-        <input type="text" name="subject" id="subject" class="contact__form">
-        <label for="message">Message</label>
-        <textarea id="message" name="message" id="message"></textarea>
-        <input type="submit" value="Send" class="cta" />
+      <div class="message"></div>
+      <form class="form">
+        <div>
+          <label class="contact_form">
+            Name
+            <input
+              type="text"
+              name="fullName"
+              id="fullName"
+              class="contact_form"
+            />
+          </label>
+          <div class="errorMessage" id="errorMessage_fullName">
+            You must enter at least 1 character
+          </div>
+        </div>
+        <div>
+          <label class="contact_form">
+            Email
+            <input type="text" name="email" id="email" class="contact_form" />
+          </label>
+          <div class="errorMessage" id="errorMessage_email">
+            You must enter a valid email address
+          </div>
+        </div>
+        <div>
+          <label class="contact_form">
+            Subject
+            <input
+              type="text"
+              name="subject"
+              id="subject"
+              class="contact_form"
+            />
+          </label>
+          <div class="errorMessage" id="errorMessage_subject">
+            You must enter at least 1 character
+          </div>
+        </div>
+        <div>
+          <label class="contact_form">
+            Message
+            <textarea
+              id="message"
+              name="message"
+              class="contact_form"
+            ></textarea>
+          </label>
+          <div class="errorMessage" id="errorMessage_textarea">
+            You must enter at least 10 characters
+          </div>
+        </div>
+        <button class="cta">Send</button>
       </form>
     </main>
     <footer>
@@ -50,8 +97,14 @@
       </div>
       <div>
         <p>On Social Media</p>
-        <a href="https://www.facebook.com"><img src="images/f_Logo_CMYK_Black.svg" alt="Facebook logo" class="facebook-logo"/></a>
+        <a href="https://www.facebook.com"
+          ><img
+            src="images/f_Logo_CMYK_Black.svg"
+            alt="Facebook logo"
+            class="facebook-logo"
+        /></a>
       </div>
     </footer>
+    <script src="js/contact.js"></script>
   </body>
 </html>
