@@ -1,16 +1,37 @@
 const form = document.querySelector("form");
 const fullName = document.querySelector("#fullName");
-const fullNameError = document.querySelector("#errorMessage_fullName")
+const fullNameError = document.querySelector("#errorMessageCheckout_fullName")
 const streetAddress = document.querySelector("#streetAddress");
-const streetAddressError = document.querySelector("#errorMessage_streetAddress")
+const streetAddressError = document.querySelector("#errorMessageCheckout_streetAddress")
 const zipCode = document.querySelector("#zipCode");
-const zipCodeError = document.querySelector("#errorMessage_zipCode")
+const zipCodeError = document.querySelector("#errorMessageCheckout_zipCode")
 const city = document.querySelector("#city");
-const cityError = document.querySelector("#errorMessage_city")
+const cityError = document.querySelector("#errorMessageCheckout_city")
 const email = document.querySelector("#email");
-const emailError = document.querySelector("#errorMessage_email")
+const emailError = document.querySelector("#errorMessageCheckout_email")
 const phoneNumber = document.querySelector("#phoneNumber");
-const phoneNumberError = document.querySelector("#errorMessage_phoneNumber")
+const phoneNumberError = document.querySelector("#errorMessageCheckout_phoneNumber")
+const button = document.querySelector(".button");
+
+
+// function checkButton() {
+//   if (checkLength(fullName.value, 1) && checkLength(streetAddress.value, 1) && checkNumber(zipCode.value, 4) && checkLength(city.value, 1) && checkEmail(email.value) && checkNumber(phoneNumber.value, 8)) {
+
+//     button.innerHTML = `<a href="/checkout-success.html" class="cta">Complete Purchase</a>`;
+//   }
+//   else {
+
+    
+//   }
+// };
+
+// fullName.addEventListener("onkeyup", checkButton);
+// streetAddress.addEventListener("onkeyup", checkButton);
+// zipCode.addEventListener("onkeyup", checkButton);
+// city.addEventListener("onkeyup", checkButton);
+// email.addEventListener("onkeyup", checkButton);
+// phoneNumber.addEventListener("onkeyup", checkButton);
+
 
 
 function sendForm(event) {
@@ -28,7 +49,7 @@ function sendForm(event) {
     streetAddressError.style.display = "block";
   }
 
-  if (checkLength(zipCode.value, 4)) {
+  if (checkNumber(zipCode.value, 4)) {
     zipCodeError.style.display = "none";
   } else {
     zipCodeError.style.display = "block";
@@ -46,7 +67,7 @@ function sendForm(event) {
     emailError.style.display = "block";
   }
 
-  if (checkLength(phoneNumber.value, 8)) {
+  if (checkNumber(phoneNumber.value, 8)) {
     phoneNumberError.style.display = "none";
   } else {
     phoneNumberError.style.display = "block";
@@ -63,6 +84,12 @@ function checkLength(value, len) {
     }
 };
 
+function checkNumber(number, len) {
+  const regEx = /^\d+$/;
+  const testNumber = regEx.test(number)
+  return testNumber;
+};
+
 function checkEmail(email) {
     const regEx = /\S+@\S+\.\S+/;
     const testEmail = regEx.test(email);
@@ -70,9 +97,10 @@ function checkEmail(email) {
 };
 
 function checkValidation() {
-  if (checkLength(fullName.value, 1) && checkEmail(email.value) && checkLength(subject.value, 1) && checkLength(textarea.value, 10)) {
-    message.innerHTML = "Message has been sent";
+  if (checkLength(fullName.value, 1) && checkLength(streetAddress.value, 1) && checkNumber(zipCode.value, 4) && checkLength(city.value, 1) && checkEmail(email.value) && checkNumber(phoneNumber.value, 8)) {
+
+  button.innerHTML = `<a href="/checkout-success.html" class="completePurchase">Complete Purchase</a>`
   }
-}
+};
 
 form.addEventListener("submit", sendForm);

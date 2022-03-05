@@ -37,6 +37,14 @@ select {
   margin-bottom: 25px;
 }
 
+.cta {
+  width: 150px;
+}
+
+.message {
+  font-style: italic;
+}
+
 .product-page ul {
   list-style: circle;
 }

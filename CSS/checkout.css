@@ -48,26 +48,32 @@ input {
 }
 
 button {
-  width: 100px;
-  height: 40px;
-  margin: 10px 0;
-  border-radius: 8px;
-  background-color: var(--blue);
+  width: 200px;
+  text-align: center;
+  background: var(--grey);
   color: var(--white);
   font-size: 1em;
+  padding: 5px 30px;
+  border: 2px solid var(--light-grey);
+  border-radius: 20px;
 }
 
-.errorMessage {
+.completePurchase {
+  width: 200px;
+  text-align: center;
+  background: var(--medium-aqua);
+  color: var(--white);
+  font-size: 1em;
+  padding: 5px 30px;
+  border: 2px solid var(--light-green);
+  border-radius: 20px;
+}
+
+.errorMessageCheckout {
   margin: -10px auto 10px auto;
   margin-right: 120px;
   font-size: small;
   text-align: right;
   color: var(--medium-aqua);
   display: none;
-}
-
-.cta {
-  text-align: center;
-  width: 200px;
-  margin: 30px auto;
 }

@@ -34,6 +34,11 @@
   footer {
     gap: 100px;
   }
+
+  /* Checkout Pages */
+  .errorMessageCheckout {
+    margin-right: 243px;
+  }
 }
 
 @media only screen and (min-width: 601px) and (max-width: 820px) {
@@ -83,6 +88,11 @@
   /* The Rain Jacket */
   .product-page__presentation img {
     width: 70px;
+  }
+
+  /* Checkout Pages */
+  .errorMessageCheckout {
+    margin-right: 170px;
   }
 
   /* About */
@@ -201,6 +211,10 @@
 
   .checkout__summary-product p {
     margin: 10px;
+  }
+
+  .errorMessageCheckout {
+    margin-right: 95px;
   }
 
   /* Inspiration */

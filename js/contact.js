@@ -56,6 +56,7 @@ function checkEmail(email) {
 function checkValidation() {
   if (checkLength(fullName.value, 1) && checkEmail(email.value) && checkLength(subject.value, 1) && checkLength(textarea.value, 10)) {
     message.innerHTML = "Message has been sent";
+    form.reset();
   }
 }
 
