@@ -17,6 +17,10 @@ h3 {
   color: var(--medium-green);
 }
 
+p {
+  line-height: 1.5;
+}
+
 header {
   width: 100%;
   text-align: center;

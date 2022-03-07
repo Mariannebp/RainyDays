@@ -3,6 +3,10 @@ a {
   color: var(--medium-aqua);
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
 header nav ul {
   border-top: 1px solid var(--grey);
   border-bottom: 1px solid var(--grey);
