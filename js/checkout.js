@@ -14,26 +14,6 @@ const phoneNumberError = document.querySelector("#errorMessageCheckout_phoneNumb
 const button = document.querySelector(".button");
 
 
-// function checkButton() {
-//   if (checkLength(fullName.value, 1) && checkLength(streetAddress.value, 1) && checkNumber(zipCode.value, 4) && checkLength(city.value, 1) && checkEmail(email.value) && checkNumber(phoneNumber.value, 8)) {
-
-//     button.innerHTML = `<a href="/checkout-success.html" class="cta">Complete Purchase</a>`;
-//   }
-//   else {
-
-    
-//   }
-// };
-
-// fullName.addEventListener("onkeyup", checkButton);
-// streetAddress.addEventListener("onkeyup", checkButton);
-// zipCode.addEventListener("onkeyup", checkButton);
-// city.addEventListener("onkeyup", checkButton);
-// email.addEventListener("onkeyup", checkButton);
-// phoneNumber.addEventListener("onkeyup", checkButton);
-
-
-
 function sendForm(event) {
   event.preventDefault();
 
@@ -43,13 +23,13 @@ function sendForm(event) {
     fullNameError.style.display = "block";
   }
 
-  if (checkLength(streetAddress.value, 1)) {
+  if (checkLength(streetAddress.value, 10)) {
     streetAddressError.style.display = "none";
   } else {
     streetAddressError.style.display = "block";
   }
 
-  if (checkNumber(zipCode.value, 4)) {
+  if (checkNumber(zipCode.value)) {
     zipCodeError.style.display = "none";
   } else {
     zipCodeError.style.display = "block";
@@ -67,7 +47,7 @@ function sendForm(event) {
     emailError.style.display = "block";
   }
 
-  if (checkNumber(phoneNumber.value, 8)) {
+  if (checkNumber(phoneNumber.value)) {
     phoneNumberError.style.display = "none";
   } else {
     phoneNumberError.style.display = "block";
@@ -84,7 +64,7 @@ function checkLength(value, len) {
     }
 };
 
-function checkNumber(number, len) {
+function checkNumber(number) {
   const regEx = /^\d+$/;
   const testNumber = regEx.test(number)
   return testNumber;
