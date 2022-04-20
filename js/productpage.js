@@ -37,6 +37,20 @@ async function productDetails() {
   
   productDetails();
 
+  
+/* Adding to cart */
+const button = document.querySelector("button");
+const message = document.querySelector(".message");
+
+
+function addedToCart(event) {
+  event.preventDefault();
+
+  message.innerHTML = `<a href="/checkout.html" class="message">Added to cart, click here for checkout</a>`;
+};
+
+button.addEventListener("click", addedToCart); 
+
 
 /* Promotions - You might also like */
 
@@ -71,15 +85,3 @@ async function productApi() {
 productApi();
 
 
-/* Adding to cart */
-const button = document.querySelector("button");
-const message = document.querySelector(".message");
-
-
-function addedToCart(event) {
-  event.preventDefault();
-
-  message.innerHTML = `<a href="/checkout.html" class="message">Added to cart, click here for checkout</a>`;
-};
-
-button.addEventListener("click", addedToCart); 
