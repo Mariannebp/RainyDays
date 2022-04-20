@@ -74,6 +74,6 @@ button {
   margin-right: 120px;
   font-size: small;
   text-align: right;
-  color: var(--medium-aqua);
+  color: var(--red);
   display: none;
 }
