@@ -14,19 +14,19 @@ const id = params.get("id");
 
 console.log(id);
 
-const url = "https://mbpedersen.no/rainy_days/wp-json/wc/store/products/" + id;
+const urlId = "https://mbpedersen.no/rainy_days/wp-json/wc/store/products/" + id;
 
-console.log(url);
+console.log(urlId);
 
 
 async function productDetails() {
     try {
-      const response = await fetch(url);
+      const response = await fetch(urlId);
       const product = await response.json();
   
-      title.innerHTML = `${product.name}`;
+      title.innerHTML = `Rainy Days | ${product.name}`;
       jacketName.innerHTML = `${product.name}`;
-      jacketPrice.innerHTML = `kr. ${product.prices.price},-`;
+      jacketPrice.innerHTML = `kr. ${product.prices.regular_price},-`;
       jacketImage.innerHTML = `<img src="${product.images[0].src}" alt="${product.name}">`;
       jacketDescription.innerHTML = `<p>${product.description}</p>`;
     }
@@ -37,7 +37,40 @@ async function productDetails() {
   
   productDetails();
 
-  
+
+/* Promotions - You might also like */
+
+const promotions = document.querySelector(".jackets-list");
+const url = "https://mbpedersen.no/rainy_days/wp-json/wc/store/products";
+
+async function productApi() {
+  try {
+    const response = await fetch(url);
+    const jackets = await response.json();
+    
+    console.log(jackets);
+
+    promotions.innerHTML = "";
+
+    jackets.forEach(function(jackets) {
+      promotions.innerHTML += `
+      <a href="productpage.html?id=${jackets.id}">
+        <div class="jackets">
+          <img src="${jackets.images[0].src}" alt="${jackets.name}">
+          <h3>${jackets.name}</h3>
+          <p>kr. ${jackets.prices.regular_price},-</p>
+        </div>
+        </a>`
+    });
+  }
+  catch (error) {
+    promotions.innerHTML = "Hmm, seems to be something wrong";
+  }
+};
+
+productApi();
+
+
 /* Adding to cart */
 const button = document.querySelector("button");
 const message = document.querySelector(".message");

@@ -16,7 +16,7 @@ async function productApi() {
         <div class="jackets">
           <img src="${jackets.images[0].src}" alt="${jackets.name}">
           <h2>${jackets.name}</h2>
-          <p>kr. ${jackets.prices.price},-</p>
+          <p>kr. ${jackets.prices.regular_price},-</p>
         </div>
         </a>`
     });
