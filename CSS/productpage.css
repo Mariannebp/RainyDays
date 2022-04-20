@@ -54,6 +54,7 @@ select {
 }
 
 .product-page__promotions {
+  margin-top: 50px;
   border-top: 1px solid var(--grey);
   border-bottom: 1px solid var(--grey);
 }

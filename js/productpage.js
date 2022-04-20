@@ -1,16 +1,3 @@
-const button = document.querySelector("button");
-const message = document.querySelector(".message");
-
-
-function addedToCart(event) {
-  event.preventDefault();
-
-  message.innerHTML = `<a href="/checkout.html" class="message">Added to cart, click here for checkout</a>`;
-};
-
-button.addEventListener("click", addedToCart);
-
-
 /* Showing product specific information */
 
 const title = document.querySelector("title");
@@ -41,7 +28,7 @@ async function productDetails() {
       jacketName.innerHTML = `${product.name}`;
       jacketPrice.innerHTML = `kr. ${product.prices.price},-`;
       jacketImage.innerHTML = `<img src="${product.images[0].src}" alt="${product.name}">`;
-      //jacketDescription.innerHTML = `${product.description}`;
+      jacketDescription.innerHTML = `<p>${product.description}</p>`;
     }
     catch(error) {
       productPage.innerHTML = "Oops, seems we did something wrong..";
@@ -49,3 +36,17 @@ async function productDetails() {
   };
   
   productDetails();
+
+  
+/* Adding to cart */
+const button = document.querySelector("button");
+const message = document.querySelector(".message");
+
+
+function addedToCart(event) {
+  event.preventDefault();
+
+  message.innerHTML = `<a href="/checkout.html" class="message">Added to cart, click here for checkout</a>`;
+};
+
+button.addEventListener("click", addedToCart); 
