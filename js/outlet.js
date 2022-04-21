@@ -19,6 +19,7 @@ async function productApi() {
             <p class="jackets__sale">- 30%</p>
           </div>
           <h2>${jackets.name}</h2>
+          <p class="jackets__before-price">kr. ${jackets.prices.regular_price},-</p>
           <p>kr. ${jackets.prices.sale_price},-</p>
         </div>
         </a>`
