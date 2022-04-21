@@ -55,7 +55,7 @@ button.addEventListener("click", addedToCart);
 /* Promotions - You might also like */
 
 const promotions = document.querySelector(".jackets-list");
-const url = "https://mbpedersen.no/rainy_days/wp-json/wc/store/products";
+const url = "https://mbpedersen.no/rainy_days/wp-json/wc/store/products?per_page=4";
 
 async function productApi() {
   try {
