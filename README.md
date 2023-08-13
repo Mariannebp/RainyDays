@@ -29,19 +29,13 @@ As I learned about user testing, the site has also been through several rounds o
 
     `git clone https://github.com/Mariannebp/RainyDays.git`
 
-2. `npm install`
-
-### Running
-
-3. `npm run start`
+2. `npm i`
 
 ## Improvements
 
 #### What I want to improve
 
-- Adjust responsiveness to standards
-- Add a cart function
-- Add a filter by categories function
+- Adjust responsiveness
 
 ## Contact
 
